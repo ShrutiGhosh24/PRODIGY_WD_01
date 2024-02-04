@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.card {
+    position: relative;
+    height: 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+/* Bottom right text */
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    text-align: center;
+    color: white;
+    font-size: 6vh;
+  }
+
+  .img {
+    padding-left: 20px;
+    position: absolute;
+    object-fit: cover;
+    padding-bottom: 100px;
+    border-radius: 5px 5px 0 0;
+
+  }
+
+.container{
+    position: absolute;
+    margin: 20px;
+    max-width: 500px;
+    padding: 16px;
+    background-color: white;
+}  
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -8px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.cards {
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #fffdfd;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.offers {
+  padding-bottom: 50px;
+}
+
+/* Clear floats */
+.zigrow:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.label{
+  font-size: medium;
+  font-style: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flightform{
+  display: table;
+  width: 100%;
+  align-content: center;
+  background-color: bisque;
+  padding: 25px 25px;
+}
+
+.hotel{
+  padding-bottom: 50px;
+}
+
+.btn btn-primary {
+  padding-left: 40px;
+}
+
+.offers{
+  padding-bottom: 50px;
+}
