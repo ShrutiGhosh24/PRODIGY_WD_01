@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travelling Tales</title>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Travelling Tales</div>
+    <nav>
+      <ul>
+        <li><a href="#featured-destinations">Destinations</a></li>
+        <li><a href="#search-and-book">Book Now</a></li>
+        <li><a href="#travel-experiences">Experiences</a></li>
+        <li><a href="#why-choose-us">Why Us</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Explore the World with Us</h1>
+      <p>Discover incredible destinations and create unforgettable memories.</p>
+      <a href="#featured-destinations" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- destination cards-->
+  <section id="featured-destinations">
+    <h2>Featured Destinations</h2>
+    <div class="row">
+      <div class="column">
+        <div class="destination-card">
+          <img src="gulmarg.jpg" alt="Destination 1">
+          <h3>Gulmarg, India</h3>
+          <p>Explore the charm of this beautiful city. Book your trip now!</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="destination-card">
+          <img src="london.jpg" alt="Destination 1">
+          <h3>London, UK</h3>
+          <p>Explore the charm of this beautiful city. Book your trip now!</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="destination-card">
+          <img src="paris.jpg" alt="Destination 1">
+          <h3>Paris, France</h3>
+          <p>Explore the charm of this beautiful city. Book your trip now!</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="destination-card">
+          <img src="italy.jpg" alt="Destination 1">
+          <h3>Venice, Italy</h3>
+          <p>Explore the charm of this beautiful city. Book your trip now!</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search and booking content goes here -->
+  <section id="search-and-book">
+      <h2>Search and Book</h2>
+      <div class="search-form">
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" placeholder="Enter your destination" required>
+  
+          <label for="check-in">Check-in Date:</label>
+          <input type="date" id="check-in" required>
+  
+          <label for="check-out">Check-out Date:</label>
+          <input type="date" id="check-out" required>
+  
+          <label for="travel-type">Travel Type:</label>
+          <select id="travel-type" required>
+              <option value="flights">Flights</option>
+              <option value="hotels">Hotels</option>
+              <option value="packages">Travel Packages</option>
+          </select>
+  
+          <button type="submit" class="btn">Search</button>
+      </div>
+    </section>
+  
+  <!-- Travel experiences content goes here -->
+<section id="travel-experiences">
+  <h2>Travel Experiences</h2>
+  <div class="carousel-container">
+      <div class="carousel" id="experience-carousel">
+          <div class="experience-card active">
+              <img src="mountains.jpg" alt="Experience 1">
+              <h3>Adventure in the Mountains</h3>
+              <p>Explore breathtaking landscapes and challenge yourself with thrilling activities.</p>
+          </div>
+          <div class="experience-card">
+              <img src="beach.jpg" alt="Experience 2">
+              <h3>Beach Paradise Getaway</h3>
+              <p>Relax on pristine beaches and enjoy the sunsets in this tropical paradise.</p>
+          </div>
+          <div class="experience-card">
+              <img src="india.jpg" alt="Experience 3">
+              <h3>Cultural Exploration</h3>
+              <p>Immerse yourself in diverse cultures, traditions, and historical landmarks.</p>
+          </div>
+          <div class="experience-card">
+            <img src="rafting.jpg" alt="Experience 3">
+            <h3>Adventure Sports</h3>
+            <p>Try adventure sports like river rafting, trekking and many more.</p>
+        </div>
+          <!-- Add more experience cards as needed -->
+      </div>
+      <button class="prev-btn">&lt;</button>
+      <button class="next-btn">&gt;</button>
+  </div>
+</section>
+
+
+  <!-- Why choose us content goes here -->
+  <section id="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <div class="reasons-container">
+        <div class="reason-card">
+          <img src="hotel.jpg" alt="beach">
+          <h3>Get hotels in the midst of natural beauty at the best prices.</h3>
+        </div>
+        <div class="reason-card">
+          <img src="restaurant.jpg" alt="beach">
+          <h3>Find the best restaurants near you for all your food cravings!</h3>
+        </div>
+        <div class="reason-card">
+          <img src="discount.jpg" alt="beach">
+          <h3>Amazing discounts on your every trip with us!</h3>
+        </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Contact links-->
+  <footer>
+    <p>&copy; 2024 Traveling Tales. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

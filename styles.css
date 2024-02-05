@@ -1,0 +1,291 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  section p{
+    color: white;
+  }
+  
+  h2 {
+    color: black;
+  }
+  
+  #hero {
+    background: url('flight.jpeg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    
+  }
+  
+  .hero-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  /* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  .destination-card {
+    margin-bottom: 30px;
+  }
+  
+  .destination-card img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 5px;
+  }
+  
+  .destination-card h3 {
+    margin-top: 10px;
+  }
+
+  /* Add styles for the Search and Book section */
+#search-and-book {
+  background-color: #f9f9f9;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.search-form input,
+.search-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Add styles for the Travel Experiences section */
+#travel-experiences {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.experience-card {
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.experience-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.prev-btn,
+.next-btn {
+  position: relative ;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/* Add styles for the Why Choose Us section */
+#why-choose-us {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.reasons-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.reason-card {
+  width: 40%;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reason-card img {
+  max-width: 360px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+  
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input[type="email"] {
+    padding: 10px;
+    width: 250px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
